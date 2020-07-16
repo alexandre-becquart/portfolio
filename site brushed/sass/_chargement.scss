@@ -1,0 +1,16 @@
+#chargement{
+    height: 16vh;
+    text-align: center;
+    div{
+        margin-top: 80px;
+        @include colorp;
+    }
+    i{
+        margin-top: 70px;
+        margin-bottom: 50px;
+        color: $colhover;
+        &:hover{
+            color: white;
+        }
+    }
+}

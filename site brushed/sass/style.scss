@@ -1,0 +1,37 @@
+@import "variable";
+@import "mixin";
+@import "nav";
+@import "home";
+@import "ourwork";
+@import "about";
+@import "contact";
+@import "chargement";
+@import "social";
+@import "shortcode";
+
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    @include bgi;
+    @include font;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    @include ze;
+}
+
+@include footer;
+

@@ -1,0 +1,36 @@
+#social{
+    background-color: $pc;
+    height: 25vh;
+    .container{
+        @include flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .icon{
+            background-color: $sc;
+            height: 70px;
+            width: 70px;
+            text-align: center;
+            line-height: 70px;
+            margin-right: 30px;
+            &:hover{
+                background-color: $colhover;
+                transition: all 0.5s ease-out 0s;
+                transform: rotateY(180deg);
+                i{
+                        color: white;
+                        transform: rotateY(180deg);
+                }
+                
+            }
+            i{
+                font-size: 2rem;
+                color: $pc;
+                padding: 20px 20px;
+                
+                
+            }
+        }
+    }
+
+}

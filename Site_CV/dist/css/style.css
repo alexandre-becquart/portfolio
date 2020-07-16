@@ -1,0 +1,1753 @@
+@charset "UTF-8";
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  max-height: 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.view {
+  max-height: 200px;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Section Home                                */
+/* -------------------------------------------------------------------------- */
+#home {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("/dist/img/business-2717066_1920.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/dist/img/business-2717066_1920.jpg");
+  background-position: center, center;
+  width: 100%;
+  height: 100vh;
+}
+
+#home #nav {
+  background-color: white;
+  position: absolute;
+  left: 50px;
+  top: 35px;
+  -webkit-box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+          box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+  height: 750px;
+  width: 220px;
+}
+
+#home #nav .name {
+  height: 35%;
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
+  background-color: #006dda;
+}
+
+#home #nav .name p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+#home #nav .name .prenom {
+  font-weight: lighter;
+  font-size: 2.2em;
+  letter-spacing: 2px;
+  line-height: 35px;
+  margin-bottom: 18px;
+}
+
+#home #nav .name .nom {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+#home #nav .name .skill {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+
+#home #nav .name .city {
+  font-size: 0.9em;
+}
+
+#home #nav .name .city i {
+  margin-right: 5px;
+  margin-top: 50px;
+}
+
+#home #nav nav {
+  height: 55%;
+}
+
+#home #nav nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 20px 20px 20px 45px;
+  text-align: right;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#home #nav nav ul li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  position: relative;
+}
+
+#home #nav nav ul li:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 3px solid rgba(0, 109, 218, 0.7);
+  width: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#home #nav nav ul li:hover:after {
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#home #nav nav ul li:hover {
+  font-weight: bold;
+}
+
+#home #nav nav ul li a {
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#home #nav .reseau {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home #nav .reseau .item a {
+  font-size: 2.2em;
+  margin: 10px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#home #nav .reseau .item a:hover {
+  color: black;
+  font-size: 2.5em;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  margin: 8px;
+}
+
+#home .title {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  width: 750px;
+  text-transform: uppercase;
+  text-align: right;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 20px;
+}
+
+#home .title h1,
+#home .title h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#home .title h1 {
+  font-size: 5.2em;
+  color: white;
+}
+
+#home .title h2 {
+  font-size: 2.2em;
+  color: black;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                               Horizontal nav                               */
+/* -------------------------------------------------------------------------- */
+.horizontalNav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.horizontalNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 50px;
+  background-color: #006dda;
+  text-transform: uppercase;
+}
+
+.horizontalNav ul a {
+  color: white;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                              Section parcours                              */
+/* -------------------------------------------------------------------------- */
+#about {
+  padding-top: 20px;
+  height: 450px;
+}
+
+#about .container {
+  max-width: 960px;
+  margin: auto;
+}
+
+#about .container h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+#about .container h2 span {
+  font-weight: bold;
+}
+
+#about .container .content .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about .container .content .about .apropos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .container .content .about .apropos .texte {
+  width: 49%;
+}
+
+#about .container .content .about .apropos .texte h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8em;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+#about .container .content .about .apropos .texte h3 i {
+  color: #18cf18;
+  margin-right: 20px;
+}
+
+#about .container .content .about .apropos .texte .intro {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+#about .container .content .about .apropos .photo {
+  width: 200px;
+  height: 200px;
+  background: url("/dist/img/3D2A0958-bewerkt_P-4.jpg");
+  background-position: center;
+  background-position-y: 5px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-right: 40px;
+  border: 2px solid white;
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
+}
+
+#about .container .content .about .capacite {
+  width: 50%;
+}
+
+#about .container .content .about .capacite h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8em;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+#about .container .content .about .capacite h3 i {
+  color: #18cf18;
+  margin-right: 20px;
+}
+
+#about .container .content .about .capacite .front,
+#about .container .content .about .capacite .responsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about .container .content .about .capacite .front p,
+#about .container .content .about .capacite .responsive p {
+  margin: 0;
+  padding: 0;
+}
+
+#about .container .content .about .capacite .front p:nth-of-type(2),
+#about .container .content .about .capacite .responsive p:nth-of-type(2) {
+  color: gray;
+  font-size: 0.9em;
+  margin-top: 3px;
+}
+
+#about .container .content .about .capacite .front .icon,
+#about .container .content .about .capacite .responsive .icon {
+  width: 50px;
+  height: 50px;
+  font-size: 1.8em;
+  text-align: center;
+  line-height: 50px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-right: 10px;
+}
+
+#about .container .content .about .capacite .front .titre,
+#about .container .content .about .capacite .responsive .titre {
+  margin-top: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+#about .container .content .about .capacite .front {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                             section experience                             */
+/* -------------------------------------------------------------------------- */
+#exp {
+  height: 100%;
+  padding-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#exp .container {
+  padding-top: 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+#exp .container h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+#exp .container h2 span {
+  font-weight: bold;
+}
+
+#exp .container h2 {
+  margin-bottom: 100px;
+}
+
+#exp .container .timeLine {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 4px;
+  height: 89%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 20px;
+}
+
+#exp .container #technocite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0px 180px 0 25px;
+  opacity: 0;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+  text-align: right;
+  position: relative;
+}
+
+#exp .container #technocite .circle {
+  position: absolute;
+  top: 12px;
+  left: 445px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 4px solid #006dda;
+  border-radius: 50%;
+}
+
+#exp .container #technocite .exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #technocite .exp .content {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  margin-right: 6px;
+}
+
+#exp .container #technocite .exp .content .titre h2,
+#exp .container #technocite .exp .content .titre h3,
+#exp .container #technocite .exp .content .titre h4,
+#exp .container #technocite .exp .content .titre p {
+  margin: 0;
+  padding: 0;
+}
+
+#exp .container #technocite .exp .content .titre h2 {
+  text-transform: uppercase;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#exp .container #technocite .exp .content .titre h3 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#exp .container #technocite .exp .content .titre h4 {
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: rgba(128, 128, 128, 0.4);
+  text-transform: capitalize;
+}
+
+#exp .container #technocite .exp .content .titre .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#exp .container #technocite .exp .content .technocite {
+  font-size: .9em;
+  border-radius: #006dda;
+  left: px;
+  top: 50px;
+}
+
+#exp .container #technocite .exp .arrow {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 5px;
+  color: white;
+  font-size: 30px;
+}
+
+#exp .container #technocite .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #technocite .date i {
+  font-size: 30px;
+  margin-top: 7px;
+  color: #006dda;
+}
+
+#exp .container #technocite .date .content {
+  background-color: #006dda;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-top: 1px;
+}
+
+#exp .container #technocite .date .content p {
+  margin: 0;
+  padding: 0;
+}
+
+#exp .container #accent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 100px 25px 0 275px;
+  opacity: 0;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+  text-align: left;
+  position: relative;
+}
+
+#exp .container #accent .circle {
+  position: absolute;
+  top: 12px;
+  left: 195px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 4px solid #006dda;
+  border-radius: 50%;
+}
+
+#exp .container #accent .exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #accent .exp .content {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  margin-left: 6px;
+}
+
+#exp .container #accent .exp .content .titre h2,
+#exp .container #accent .exp .content .titre h3,
+#exp .container #accent .exp .content .titre h4,
+#exp .container #accent .exp .content .titre p {
+  margin: 0;
+  padding: 0;
+}
+
+#exp .container #accent .exp .content .titre h2 {
+  text-transform: uppercase;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#exp .container #accent .exp .content .titre h3 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#exp .container #accent .exp .content .titre h4 {
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: rgba(128, 128, 128, 0.4);
+  text-transform: capitalize;
+}
+
+#exp .container #accent .exp .content .titre .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#exp .container #accent .exp .content .technocite {
+  font-size: .9em;
+  border-radius: #006dda;
+  left: px;
+  top: 50px;
+}
+
+#exp .container #accent .exp .arrow {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 5px;
+  color: white;
+  font-size: 30px;
+}
+
+#exp .container #accent .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #accent .date i {
+  font-size: 30px;
+  margin-top: 7px;
+  color: #006dda;
+}
+
+#exp .container #accent .date .content {
+  background-color: #006dda;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+
+#exp .container #accent .date .content p {
+  margin: 0;
+  padding: 0;
+}
+
+#exp .container #agenceImmo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 100px 170px 0 25px;
+  text-align: right;
+  opacity: 0;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+  text-align: right;
+  position: relative;
+}
+
+#exp .container #agenceImmo .circle {
+  position: absolute;
+  top: 12px;
+  left: 445px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 4px solid #006dda;
+  border-radius: 50%;
+}
+
+#exp .container #agenceImmo .exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #agenceImmo .exp .content {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  margin-right: 6px;
+}
+
+#exp .container #agenceImmo .exp .content .titre h2,
+#exp .container #agenceImmo .exp .content .titre h3,
+#exp .container #agenceImmo .exp .content .titre h4,
+#exp .container #agenceImmo .exp .content .titre p {
+  margin: 0;
+  padding: 0;
+}
+
+#exp .container #agenceImmo .exp .content .titre h2 {
+  text-transform: uppercase;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#exp .container #agenceImmo .exp .content .titre h3 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#exp .container #agenceImmo .exp .content .titre h4 {
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: rgba(128, 128, 128, 0.4);
+  text-transform: capitalize;
+}
+
+#exp .container #agenceImmo .exp .content .titre .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#exp .container #agenceImmo .exp .content .technocite {
+  font-size: .9em;
+  border-radius: #006dda;
+  left: px;
+  top: 50px;
+}
+
+#exp .container #agenceImmo .exp .arrow {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 5px;
+  color: white;
+  font-size: 30px;
+}
+
+#exp .container #agenceImmo .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #agenceImmo .date i {
+  font-size: 30px;
+  margin-top: 7px;
+  color: #006dda;
+}
+
+#exp .container #agenceImmo .date .content {
+  background-color: #006dda;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-top: 1px;
+}
+
+#exp .container #agenceImmo .date .content p {
+  margin: 0;
+  padding: 0;
+}
+
+#exp .container #bs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 100px 25px 0 275px;
+  opacity: 0;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+  text-align: left;
+  position: relative;
+}
+
+#exp .container #bs .circle {
+  position: absolute;
+  top: 12px;
+  left: 195px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 4px solid #006dda;
+  border-radius: 50%;
+}
+
+#exp .container #bs .exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #bs .exp .content {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  margin-left: 6px;
+}
+
+#exp .container #bs .exp .content .titre h2,
+#exp .container #bs .exp .content .titre h3,
+#exp .container #bs .exp .content .titre h4,
+#exp .container #bs .exp .content .titre p {
+  margin: 0;
+  padding: 0;
+}
+
+#exp .container #bs .exp .content .titre h2 {
+  text-transform: uppercase;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#exp .container #bs .exp .content .titre h3 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#exp .container #bs .exp .content .titre h4 {
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: rgba(128, 128, 128, 0.4);
+  text-transform: capitalize;
+}
+
+#exp .container #bs .exp .content .titre .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#exp .container #bs .exp .content .technocite {
+  font-size: .9em;
+  border-radius: #006dda;
+  left: px;
+  top: 50px;
+}
+
+#exp .container #bs .exp .arrow {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 5px;
+  color: white;
+  font-size: 30px;
+}
+
+#exp .container #bs .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #bs .date i {
+  font-size: 30px;
+  margin-top: 7px;
+  color: #006dda;
+}
+
+#exp .container #bs .date .content {
+  background-color: #006dda;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+
+#exp .container #bs .date .content p {
+  margin: 0;
+  padding: 0;
+}
+
+#exp .container #vlanCM {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 100px 200px 0 25px;
+  text-align: right;
+  opacity: 0;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+  text-align: right;
+  position: relative;
+}
+
+#exp .container #vlanCM .circle {
+  position: absolute;
+  top: 12px;
+  left: 445px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 4px solid #006dda;
+  border-radius: 50%;
+}
+
+#exp .container #vlanCM .exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #vlanCM .exp .content {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  margin-right: 6px;
+}
+
+#exp .container #vlanCM .exp .content .titre h2,
+#exp .container #vlanCM .exp .content .titre h3,
+#exp .container #vlanCM .exp .content .titre h4,
+#exp .container #vlanCM .exp .content .titre p {
+  margin: 0;
+  padding: 0;
+}
+
+#exp .container #vlanCM .exp .content .titre h2 {
+  text-transform: uppercase;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#exp .container #vlanCM .exp .content .titre h3 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#exp .container #vlanCM .exp .content .titre h4 {
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: rgba(128, 128, 128, 0.4);
+  text-transform: capitalize;
+}
+
+#exp .container #vlanCM .exp .content .titre .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#exp .container #vlanCM .exp .content .technocite {
+  font-size: .9em;
+  border-radius: #006dda;
+  left: px;
+  top: 50px;
+}
+
+#exp .container #vlanCM .exp .arrow {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 5px;
+  color: white;
+  font-size: 30px;
+}
+
+#exp .container #vlanCM .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #vlanCM .date i {
+  font-size: 30px;
+  margin-top: 7px;
+  color: #006dda;
+}
+
+#exp .container #vlanCM .date .content {
+  background-color: #006dda;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-top: 1px;
+}
+
+#exp .container #vlanCM .date .content p {
+  margin: 0;
+  padding: 0;
+}
+
+#exp .container #vlan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 100px 25px 0 159px;
+  opacity: 0;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+  text-align: left;
+  position: relative;
+}
+
+#exp .container #vlan .circle {
+  position: absolute;
+  top: 12px;
+  left: 311px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 4px solid #006dda;
+  border-radius: 50%;
+}
+
+#exp .container #vlan .exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #vlan .exp .content {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  margin-left: 6px;
+}
+
+#exp .container #vlan .exp .content .titre h2,
+#exp .container #vlan .exp .content .titre h3,
+#exp .container #vlan .exp .content .titre h4,
+#exp .container #vlan .exp .content .titre p {
+  margin: 0;
+  padding: 0;
+}
+
+#exp .container #vlan .exp .content .titre h2 {
+  text-transform: uppercase;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#exp .container #vlan .exp .content .titre h3 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#exp .container #vlan .exp .content .titre h4 {
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: rgba(128, 128, 128, 0.4);
+  text-transform: capitalize;
+}
+
+#exp .container #vlan .exp .content .titre .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#exp .container #vlan .exp .content .technocite {
+  font-size: .9em;
+  border-radius: #006dda;
+  left: px;
+  top: 50px;
+}
+
+#exp .container #vlan .exp .arrow {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 5px;
+  color: white;
+  font-size: 30px;
+}
+
+#exp .container #vlan .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #vlan .date i {
+  font-size: 30px;
+  margin-top: 7px;
+  color: #006dda;
+}
+
+#exp .container #vlan .date .content {
+  background-color: #006dda;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+
+#exp .container #vlan .date .content p {
+  margin: 0;
+  padding: 0;
+}
+
+#exp .container #com {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 100px 370px 0 25px;
+  text-align: right;
+  opacity: 0;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+  text-align: right;
+  position: relative;
+}
+
+#exp .container #com .circle {
+  position: absolute;
+  top: 12px;
+  left: 445px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 4px solid #006dda;
+  border-radius: 50%;
+}
+
+#exp .container #com .exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #com .exp .content {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  margin-right: 6px;
+}
+
+#exp .container #com .exp .content .titre h2,
+#exp .container #com .exp .content .titre h3,
+#exp .container #com .exp .content .titre h4,
+#exp .container #com .exp .content .titre p {
+  margin: 0;
+  padding: 0;
+}
+
+#exp .container #com .exp .content .titre h2 {
+  text-transform: uppercase;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#exp .container #com .exp .content .titre h3 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#exp .container #com .exp .content .titre h4 {
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: rgba(128, 128, 128, 0.4);
+  text-transform: capitalize;
+}
+
+#exp .container #com .exp .content .technocite {
+  font-size: .9em;
+  border-radius: #006dda;
+  left: px;
+  top: 50px;
+}
+
+#exp .container #com .exp .arrow {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 5px;
+  color: white;
+  font-size: 30px;
+}
+
+#exp .container #com .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #com .date i {
+  font-size: 30px;
+  margin-top: 7px;
+  color: #006dda;
+}
+
+#exp .container #com .date .content {
+  background-color: #006dda;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-top: 1px;
+}
+
+#exp .container #com .date .content p {
+  margin: 0;
+  padding: 0;
+}
+
+#exp .container #eco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 100px 25px 0 370px;
+  opacity: 0;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+  text-align: left;
+  position: relative;
+}
+
+#exp .container #eco .circle {
+  position: absolute;
+  top: 12px;
+  left: 100px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 4px solid #006dda;
+  border-radius: 50%;
+}
+
+#exp .container #eco .exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #eco .exp .content {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  margin-left: 6px;
+}
+
+#exp .container #eco .exp .content .titre h2,
+#exp .container #eco .exp .content .titre h3,
+#exp .container #eco .exp .content .titre h4,
+#exp .container #eco .exp .content .titre p {
+  margin: 0;
+  padding: 0;
+}
+
+#exp .container #eco .exp .content .titre h2 {
+  text-transform: uppercase;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#exp .container #eco .exp .content .titre h3 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#exp .container #eco .exp .content .titre h4 {
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: rgba(128, 128, 128, 0.4);
+  text-transform: capitalize;
+}
+
+#exp .container #eco .exp .content .technocite {
+  font-size: .9em;
+  border-radius: #006dda;
+  left: px;
+  top: 50px;
+}
+
+#exp .container #eco .exp .arrow {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 5px;
+  color: white;
+  font-size: 30px;
+}
+
+#exp .container #eco .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exp .container #eco .date i {
+  font-size: 30px;
+  margin-top: 7px;
+  color: #006dda;
+}
+
+#exp .container #eco .date .content {
+  background-color: #006dda;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+
+#exp .container #eco .date .content p {
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             section compétences                            */
+/* -------------------------------------------------------------------------- */
+#comp {
+  max-width: 960px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+#comp h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+#comp h2 span {
+  font-weight: bold;
+}
+
+#comp .container {
+  padding-top: 20px;
+}
+
+#comp .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#comp .container .content .colLeft,
+#comp .container .content .colRigth {
+  width: 47%;
+}
+
+#comp .container .content .colLeft > div,
+#comp .container .content .colRigth > div {
+  margin-bottom: 30px;
+}
+
+#comp .container .content .colLeft .titre,
+#comp .container .content .colRigth .titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#comp .container .content .colLeft .titre h2,
+#comp .container .content .colRigth .titre h2 {
+  font-size: 1.2em;
+}
+
+#comp .container .content .colLeft .niveau,
+#comp .container .content .colRigth .niveau {
+  height: 5px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 10px;
+  position: relative;
+}
+
+#comp .container .content .colLeft .niveau:after,
+#comp .container .content .colRigth .niveau:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #dd1717;
+  border-radius: 10px;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+#comp .container .content .colLeft .niveau.pc80:after,
+#comp .container .content .colRigth .niveau.pc80:after {
+  width: 80%;
+}
+
+#comp .container .content .colLeft .niveau.pc65:after,
+#comp .container .content .colRigth .niveau.pc65:after {
+  width: 65%;
+}
+
+#comp .container .content .colLeft .niveau.pc50:after,
+#comp .container .content .colRigth .niveau.pc50:after {
+  width: 50%;
+}
+
+#comp .container .content .colLeft .niveau.pc40:after,
+#comp .container .content .colRigth .niveau.pc40:after {
+  width: 40%;
+}
+
+#comp .container .content .colLeft .niveau.pc35:after,
+#comp .container .content .colRigth .niveau.pc35:after {
+  width: 35%;
+}
+
+#comp .container .content .colLeft h2,
+#comp .container .content .colLeft p,
+#comp .container .content .colRigth h2,
+#comp .container .content .colRigth p {
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              section portfolio                             */
+/* -------------------------------------------------------------------------- */
+#portfolio {
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+}
+
+#portfolio .container {
+  max-width: 960px;
+  margin: auto;
+}
+
+#portfolio .container h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+#portfolio .container h2 span {
+  font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 section CV                                 */
+/* -------------------------------------------------------------------------- */
+#cv {
+  padding-bottom: 20px;
+  height: 300px;
+}
+
+#cv .container {
+  max-width: 960px;
+  margin: auto;
+}
+
+#cv .container h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+#cv .container h2 span {
+  font-weight: bold;
+}
+
+#cv .container .content {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#cv .container .content a {
+  background-color: #006dda;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               section contact                              */
+/* -------------------------------------------------------------------------- */
+#contact {
+  background-color: #006dda;
+  height: 300px;
+  padding-top: 20px;
+  color: white;
+}
+
+#contact .container {
+  max-width: 960px;
+  margin: auto;
+}
+
+#contact .container h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+#contact .container h2 span {
+  font-weight: bold;
+}
+
+#contact .container .titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contact .container .titre .reseau {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 15px;
+}
+
+#contact .container .titre .reseau .item a {
+  font-size: 2.2em;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#contact .container .titre .reseau .item a:hover {
+  color: black;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#contact .container h2 {
+  margin-bottom: 30px;
+}
+
+#contact .container h2 span {
+  font-weight: bold;
+}
+
+#contact .container .content p,
+#contact .container .content div,
+#contact .container .content h3 {
+  margin: 0;
+  padding: 0;
+}
+
+#contact .container .content h3 {
+  font-weight: lighter;
+}
+
+#contact .container .content h3 span {
+  font-weight: bold;
+}
+
+#contact .container .content p {
+  margin-bottom: 10px;
+}
+
+#contact .container .content .mail i {
+  margin-right: 5px;
+}
+
+#contact .container .content .mail a {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

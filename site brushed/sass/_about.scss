@@ -1,0 +1,75 @@
+#about{
+    @include titre;
+    height: 100vh;
+    background-color: $sc;
+
+    .container{
+        width: 60%;
+        margin: auto;
+        @include flex;
+        justify-content: space-between;
+        .item{
+            margin-right: 20px;
+            h4{
+                color: white;
+                font-size: 1.5rem;
+                font-weight: normal;
+                margin-bottom: 0;
+            }
+            p{
+                color: $color;
+                line-height: 25px;
+                font-weight: normal;
+                span{
+                    color: $colhover
+                }
+            }
+            .icon{
+                a{
+                    color: $color;
+                    margin-right: 10px;
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+            
+        
+        }
+    }
+    .illu{
+        width:100%;
+        height: 80%;
+        background: url(/dist/img/profile/profile-01.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        .divhover{
+            position: relative;
+            color: White;
+            font-size: 1.2rem;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $colhover;
+            text-align: center;
+            opacity: 0;
+            transform: scale(1,1);
+            @include divhover;
+            &:hover{
+                p{
+                    transform: rotateY(180deg);
+                }
+            }
+            p{
+                color: white;
+            }
+           
+        }
+    }
+
+
+    
+}

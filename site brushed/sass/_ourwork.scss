@@ -1,0 +1,77 @@
+#ourwork{
+    background-color: $pc;
+    height: 100vh;
+    padding-bottom: 50px !important;
+    @include titre;
+    span{
+        color: $colhover;
+    }
+    .container{
+        width: 60%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .projet{
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+
+    .menu{
+
+        h3{
+            @include ze;
+            color: white;
+            font-weight: normal;
+            font-size: 1.8rem;
+        
+        }
+
+        li{
+            margin-top: 20px;
+        }
+
+        a{
+            color: $color;
+            &:hover{
+                color: white;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+
+
+    .grid{
+        width: 100%;
+        height: 300%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding-top: 11px;
+        .item{
+            margin: 0 20px 20px 0;
+            width: 90%;
+            height: 90%;
+            @include thumb;
+            background-size: cover;
+            .divhover{                
+                width: 100%;
+                height: 100%;
+                background-color: $colhover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transform: scale(0.5, 0.5);
+                @include divhover;
+                cursor: pointer;
+                i{
+                    color: white;
+                    font-size: 1.5rem;
+
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@mixin container {
+    width: 90%;
+    margin: auto;
+    
+}
+
+@mixin ze {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flex{
+    display: flex;
+}
+
+@mixin font {
+    @font-face {
+        font-family: "Retina regular";
+        src: url(/dist/font/Retina-Regular.3ffb73ee04af18a2aaa81bb96f522b42.woff2);
+    }
+    @font-face {
+        font-family: "Retina medium";
+        src: url(/dist/font/RetinaMedium.2802969ef9268141c2b16b2e10f69cad.woff2);
+    }
+    @font-face {
+        font-family: "Retina bold";
+        src: url("/dist/font/Retina-Bold.3bbf9f017650e3891393e041647f9e1e.woff2");
+    }
+    @font-face {
+        font-family: "Retina black";
+        src: url("/dist/font/RetinaBlack.f4bb6486ade65bdabcb864092d372f49.woff2");
+    }
+}
+
+@mixin boxhover {
+    &:hover{
+        transform: translate3D(0,-4px,0);
+        box-shadow:  0 20px 20px $color-search ;
+        transition: all 0.3s ease-out;
+    }
+}
+

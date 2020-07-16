@@ -1,0 +1,66 @@
+#contact{
+    @include titre;
+    background-color: $pc;
+    height: 100vh;
+    .info{
+        display: flex;
+        width: 60%;
+        margin: auto;
+        .form{
+            width: 80%;
+            padding-top: 6px;
+            div{
+                margin-bottom: 1px;
+            }
+            input{
+                width: 95%;
+                @include zone;
+                height: 50px;
+            }
+            textarea{
+                width: 95%;
+                @include zone;
+                height: 100%;
+                @include font;
+            }
+        }
+
+        button{
+            border: none;
+            @include font;
+            margin-top: 20px;
+            width: 200px;
+            height: 60px;
+            font-size: 1.1rem;
+            background-color: #3C3F45;
+            color: #23262C;
+            &:hover{
+                color: white;
+                background-color: $colhover;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+        .detail{
+            width: 20%;
+            h3{
+                margin-top: 0;
+                color: white;
+                font-size: 1.5rem;
+                font-weight: normal;
+            }
+            li{
+                margin-bottom: 20px;
+                @include colorp;
+                a{
+                    color: $colhover;
+                    &:hover{
+                        color: white;
+                    }
+    
+                }
+
+            }
+        }
+
+    }
+}

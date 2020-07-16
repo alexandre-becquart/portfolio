@@ -1,0 +1,122 @@
+[
+    {
+        "thumbnail": "photos/acrobats_thumbnail.jpg",
+        "preview": "photos/acrobats_preview.jpg",
+        "fullsize": "photos/acrobats_fullsize.jpg",
+        "alt": "acrobats"
+    },
+    {
+        "thumbnail": "photos/apartments_thumbnail.jpg",
+        "preview": "photos/apartments_preview.jpg",
+        "fullsize": "photos/apartments_fullsize.jpg",
+        "alt": "apartments"
+    },
+    {
+        "thumbnail": "photos/berries_thumbnail.jpg",
+        "preview": "photos/berries_preview.jpg",
+        "fullsize": "photos/berries_fullsize.jpg",
+        "alt": "berries"
+    },
+    {
+        "thumbnail": "photos/carousel_thumbnail.jpg",
+        "preview": "photos/carousel_preview.jpg",
+        "fullsize": "photos/carousel_fullsize.jpg",
+        "alt": "carousel"
+    },
+    {
+        "thumbnail": "photos/eighteighteight_thumbnail.jpg",
+        "preview": "photos/eighteighteight_preview.jpg",
+        "fullsize": "photos/eighteighteight_fullsize.jpg",
+        "alt": "eighteighteight"
+    },
+    {
+        "thumbnail": "photos/evergreens_thumbnail.jpg",
+        "preview": "photos/evergreens_preview.jpg",
+        "fullsize": "photos/evergreens_fullsize.jpg",
+        "alt": "evergreens"
+    },
+    {
+        "thumbnail": "photos/fish_thumbnail.jpg",
+        "preview": "photos/fish_preview.jpg",
+        "fullsize": "photos/fish_fullsize.jpg",
+        "alt": "fish"
+    },
+    {
+        "thumbnail": "photos/lantern_thumbnail.jpg",
+        "preview": "photos/lantern_preview.jpg",
+        "fullsize": "photos/lantern_fullsize.jpg",
+        "alt": "lantern"
+    },
+    {
+        "thumbnail": "photos/montreal_thumbnail.jpg",
+        "preview": "photos/montreal_preview.jpg",
+        "fullsize": "photos/montreal_fullsize.jpg",
+        "alt": "montreal"
+    },
+    {
+        "thumbnail": "photos/neptune_thumbnail.jpg",
+        "preview": "photos/neptune_preview.jpg",
+        "fullsize": "photos/neptune_fullsize.jpg",
+        "alt": "neptune"
+    },
+    {
+        "thumbnail": "photos/nutcracker_thumbnail.jpg",
+        "preview": "photos/nutcracker_preview.jpg",
+        "fullsize": "photos/nutcracker_fullsize.jpg",
+        "alt": "nutcracker"
+    },
+    {
+        "thumbnail": "photos/ornament_thumbnail.jpg",
+        "preview": "photos/ornament_preview.jpg",
+        "fullsize": "photos/ornament_fullsize.jpg",
+        "alt": "ornament"
+    },
+    {
+        "thumbnail": "photos/pumpkins_thumbnail.jpg",
+        "preview": "photos/pumpkins_preview.jpg",
+        "fullsize": "photos/pumpkins_fullsize.jpg",
+        "alt": "pumpkins"
+    },
+    {
+        "thumbnail": "photos/redplant_thumbnail.jpg",
+        "preview": "photos/redplant_preview.jpg",
+        "fullsize": "photos/redplant_fullsize.jpg",
+        "alt": "redplant"
+    },
+    {
+        "thumbnail": "photos/refraction_thumbnail.jpg",
+        "preview": "photos/refraction_preview.jpg",
+        "fullsize": "photos/refraction_fullsize.jpg",
+        "alt": "refraction"
+    },
+    {
+        "thumbnail": "photos/rose_thumbnail.jpg",
+        "preview": "photos/rose_preview.jpg",
+        "fullsize": "photos/rose_fullsize.jpg",
+        "alt": "rose"
+    },
+    {
+        "thumbnail": "photos/sculpture_thumbnail.jpg",
+        "preview": "photos/sculpture_preview.jpg",
+        "fullsize": "photos/sculpture_fullsize.jpg",
+        "alt": "sculpture"
+    },
+    {
+        "thumbnail": "photos/ship_thumbnail.jpg",
+        "preview": "photos/ship_preview.jpg",
+        "fullsize": "photos/ship_fullsize.jpg",
+        "alt": "ship"
+    },
+    {
+        "thumbnail": "photos/stowe_thumbnail.jpg",
+        "preview": "photos/stowe_preview.jpg",
+        "fullsize": "photos/stowe_fullsize.jpg",
+        "alt": "stowe"
+    },
+    {
+        "thumbnail": "photos/swatches_thumbnail.jpg",
+        "preview": "photos/swatches_preview.jpg",
+        "fullsize": "photos/swatches_fullsize.jpg",
+        "alt": "swatches"
+    }
+]

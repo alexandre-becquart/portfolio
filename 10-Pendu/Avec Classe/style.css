@@ -1,0 +1,310 @@
+html{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+*, *:after, *:hover{
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1024px;
+    margin: 25px auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #E1E1E7;
+    border-radius: 20px;
+
+}
+
+.btn{
+    display: flex;
+}
+
+.btn button{
+    margin-right: 10px;
+    border: none;
+    height: 25px;
+    background-color: #247BA0;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
+
+
+.btn button:hover{
+    background-color: #00A2F0;
+    transition: all 0.3s ease-in-out;
+}
+.btn button:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    border-radius: 0 0 10px 10px;
+    background-color: #2A77B6;
+    transition: all 0.5s 0.2s ease;
+}
+
+.btn button:hover:after{
+    width: 100%;
+}
+
+
+.btn .btnOut{
+    margin-right: 10px;
+    border: none;
+    height: 25px;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn .btnOut:hover{
+    margin-right: 10px;
+    border: none;
+    height: 25px;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+h1{
+    text-transform: uppercase;
+    margin: 0 0 50px 0;
+    padding: 10px 50px;
+    border-radius: 10px;
+    background-color: #F8F8FF;
+}
+
+main .lettre {
+    border-bottom: 5px solid #000;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin: 20px 20px 20px 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+    
+}
+
+#lettre{
+    justify-content: space-between;
+    
+}
+
+main{
+    display: flex;
+    margin-bottom: 25px;
+}
+.jeu{
+    display: flex;
+}
+
+.gagne{
+    height: 50px;
+    margin: 0 auto 30px auto;
+    color: white;
+    background-color: green;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 10px ;
+}
+
+.perdu{
+    height: 50px;
+    margin: 0 auto 30px auto;
+    color: white;
+    background-color: red;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 10px ;
+}
+
+.letUti{
+    height: 300px;
+    background-color:#F8F8FF;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.letUti div{
+    margin-right: 5px;
+}
+
+.letUti h2{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    
+}
+
+#letUti{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    height: 100px;
+}
+#motUti{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    height: 100px;
+}
+
+#partie1{
+    width: 60%;
+    padding: 5px;
+}
+
+#partie2{
+    position: relative;
+    height: 325px;
+    width: 40%;
+    align-self: center;
+
+}
+
+.etape1{
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    background-color: black;
+    width: 250px;
+    height: 10px;
+    border-radius: 5px;
+}
+.etape2{
+    position: absolute;
+    bottom: 20px;
+    left: 150px;
+    background-color: black;
+    height: 250px;
+    width: 10px;
+    border-radius: 5px 0 0 0;
+}
+.etape3{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    background-color: black;
+    width: 150px;
+    height: 10px;
+    border-radius: 5px 5px 5px 0;
+}
+.etape4{
+    position: absolute;
+    top: 76px;
+    left: 145px;
+    background-color: black;
+    width: 75px;
+    height: 10px;
+    transform: rotate(-45deg);
+}
+
+.etape5{
+    position: absolute;
+    top: 60px;
+    left: 270px;
+    background-color: black;
+    height: 30px;
+    width: 10px;
+}
+.etape6{
+    position: absolute;
+    top: 80px;
+    left: 255px;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.etape7{
+    position: absolute;
+    top: 100px;
+    left: 270px;
+    background-color: black;
+    height: 100px;
+    width: 10px;
+}
+.etape8{
+    position: absolute;
+    top: 190px;
+    left: 285px;
+    background-color: black;
+    height: 60px;
+    width: 10px;
+    border-radius: 5px;
+    transform: rotate(-35deg);
+}
+.etape9{
+    position: absolute;
+    top: 190px;
+    left: 255px;
+    background-color: black;
+    height: 60px;
+    width: 10px;
+    border-radius: 5px;
+    transform: rotate(35deg);
+}
+
+.etape10{
+    position: absolute;
+    top: 130px;
+    left: 285px;
+    background-color: black;
+    height: 60px;
+    width: 10px;
+    border-radius: 5px;
+    transform: rotate(-35deg);
+}
+                                        
+.etape11{
+    position: absolute;
+    top: 130px;
+    left: 255px;
+    background-color: black;
+    height: 60px;
+    width: 10px;
+    border-radius: 5px;
+    transform: rotate(35deg);
+}

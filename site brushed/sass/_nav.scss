@@ -1,0 +1,32 @@
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    .container{
+        background-color: $sc;
+        @include flex;
+        justify-content: space-between;
+        height: 60px;
+        align-items: center;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    }
+    .logo{
+        background: url(/dist/img/logo_@2x.png) no-repeat;
+        background-size: cover;
+        width: 96px;
+        height: 30px;
+    }
+    ul{
+        display: flex;
+        margin-right: 20px;
+    }
+    a{
+        color: white;
+        text-transform: uppercase;
+        margin-left: 50px;
+        &:hover{
+            color: $colhover;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}

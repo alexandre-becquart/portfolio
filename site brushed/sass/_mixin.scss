@@ -1,0 +1,134 @@
+@mixin bgi {
+    background: linear-gradient(rgba(black,0.2), rgba(black,0.2)), url(/dist/img/slider-images/image01.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin font {
+    font-family: $font;
+}
+
+@mixin colorp {
+    color: $color;
+}
+
+@mixin ze {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin height {
+    height: 100vh;
+}
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin hover {
+    &:hover{
+        background-color: $colhover;
+        transition: all 0.5s ease-in-out;
+    }
+    
+}
+
+@mixin titre {
+    padding-top: 10vh;
+    .titre{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    h1{
+        @include ze;
+        color: white;
+        font-weight: normal;
+        font-size: 3.5rem;
+    }
+
+    h2{
+        @include colorp;
+        @include ze;
+        font-weight: normal;
+    }
+    
+    
+}
+
+@mixin titre2 {
+    padding-top: 15vh;
+    .titre{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    h1{
+        @include ze;
+        color: white;
+        font-weight: normal;
+        font-size: 3.5rem;
+    }
+
+    h2{
+        @include colorp;
+        @include ze;
+        font-weight: normal;
+    }
+    
+    
+}
+
+@mixin thumb {
+    background: url(/dist/img/work/thumbs/image-01.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+@mixin zone {
+    border: none;
+    background-color: $sc;
+    color: $colhover;
+    font-size: 0.9rem;
+    padding: 10px 0 10px 15px;
+}
+
+@mixin divhover {
+    &:hover{
+        opacity: 1;
+        transition: all 0.5s ease-out 0s;
+        transform: rotateY(180deg) scale(1, 1);
+    }    
+}
+
+@mixin sh2{
+    h2{
+        color: white;
+        font-weight: normal;
+        font-size: 1.3rem;
+        @include font;
+        text-transform: uppercase;
+    }
+} 
+    
+
+
+@mixin footer {
+    footer{
+        height: 40px;
+        text-align: center;
+        font-size: 0.8rem;
+        color: white;
+        p{
+            margin-top: 20px;
+        }
+        span{
+            color: $colhover;
+        }
+    }
+    
+}

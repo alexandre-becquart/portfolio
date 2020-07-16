@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Dailymotion</title>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div><a href="#"><i class="fas fa-chevron-left"></i></a></div>
+                <div><img src="img/Dailymotion_logo_(2015).svg" alt="Logo dailymotion"></div>
+            </div>
+            <form autocorect="off" autocomplete="off" autocapitalize="true">
+                <input type="text" id="search" name="search" placeholder="Recherche...">
+                <span><i class="fas fa-search"></i></span>
+            </form>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#"><i class="fas fa-user-circle"></i>Mon profils</a>
+                        <ul class="sous_menu">
+                            <li><a href="#"><i class="fas fa-tv"></i>Ma chaîne</a></li>
+                            <li><a href="#"><i class="fas fa-upload"></i>Publier</a></li>
+                            <li><a href="#"><i class="fas fa-cog"></i>Paramettre</a></li>
+                            <li><a href="#"><i class="fas fa-sign-out-alt"></i>Se déconnecter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <section id="lecteur" class="container">
+                <div class="lecteur">
+                    <div class="videocom">
+                        <div class="video">
+                            <iframe frameborder="0" width="480" height="270"
+                                src="https://www.dailymotion.com/embed/video/x7mo1sv" allowfullscreen
+                                allow="autoplay"></iframe>
+                            <div class="com">
+                                <div class="content">
+                                    <button id="collapse" onclick="collapse()"><span>Afficher les coms</span></button>
+                                </div>
+                                <div class="social">
+                                    <a href="#"><i class="fas fa-heart"><span>570</span></i></a>
+                                    <a href="#"><i class="far fa-clock"></i></a>
+                                    <a href="#"><i class="fas fa-share"></i></a>
+                                    <a href="#"> <i class="fas fa-plus-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="content">
+                        <p>il y a 22 heures | 2.5K vues</p>
+                        <h1>Countdown (Bande-annonce VF)</h1>
+                        <div class="info">
+
+                            <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                            <div>
+                                <a href="#">Première FR </a>
+                                <i class="fas fa-check-circle"></i>
+                                <button>suivre</button>
+                                <a href="#">Cinema</a>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint et natus, dignissimos cumque,
+                            non quo odit eligendi fugit soluta, eveniet id aliquam magnam nemo illum. Id minus
+                            consequuntur impedit adipisci.</p>
+                        <div class="grouptag">
+                            <div class="tag">tag</div>
+                            <div class="tag">tag</div>
+                            <div class="tag">tag</div>
+                        </div>
+
+                        <div class="nextvideo">
+                            <div class="scrollho">
+                                <div class="asuivre">
+                                    <i class="fas fa-play-circle"></i>
+                                    <div class="img"></div>
+                                    <div class="text">
+                                        <h3>Prochaine vidéo 1</h3>
+                                        <div>
+                                            <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                                            <div><a href="#">Première FR<i class="fas fa-check-circle"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="asuivre">
+                                    <i class="fas fa-play-circle"></i>
+                                    <div class="img"></div>
+                                    <div class="text">
+                                        <h3>Prochaine vidéo 2</h3>
+                                        <div>
+                                            <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                                            <div><a href="#">Première FR<i class="fas fa-check-circle"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="asuivre">
+                                    <i class="fas fa-play-circle"></i>
+                                    <div class="img"></div>
+                                    <div class="text">
+                                        <h3>Prochaine vidéo 3</h3>
+                                        <div>
+                                            <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                                            <div><a href="#">Première FR<i class="fas fa-check-circle"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="asuivre">
+                                    <i class="fas fa-play-circle"></i>
+                                    <div class="img"></div>
+                                    <div class="text">
+                                        <h3>Prochaine vidéo 4</h3>
+                                        <div>
+                                            <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                                            <div><a href="#">Première FR<i class="fas fa-check-circle"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <div class="changeStyle" id="changeStyle">
+                <div class="collapse" id="element">
+                    <div class="content-comment">
+                        <div class="user-comment">
+                            <p><i class="fas fa-user"></i>&nbsp;xpo du 65</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis perspiciatis iste
+                                nulla, </p>
+                        </div>
+                    </div>
+                    <div class="content-comment">
+                        <div class="user-comment">
+                            <p><i class="fas fa-user"></i>&nbsp;xpo du 65</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis perspiciatis iste
+                                nulla, </p>
+                        </div>
+                    </div>
+                    <div class="content-comment">
+                        <div class="user-comment">
+                            <p><i class="fas fa-user"></i>&nbsp;xpo du 65</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis perspiciatis iste
+                                nulla, </p>
+                        </div>
+                    </div>
+                    <div class="content-comment">
+                        <div class="user-comment">
+                            <p><i class="fas fa-user"></i>&nbsp;xpo du 65</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis perspiciatis iste
+                                nulla, </p>
+                        </div>
+                    </div>
+                </div>
+                <section class="tendance">
+                    <div class="container" id="coucou">
+                        <h2>Vidéo tendance</h2>
+                        <div class="liste">
+                            <div class="item">
+                                <i class="fas fa-play-circle"></i>
+                                <div class="img"></div>
+                                <div class="text">
+                                    <h3>Vidéo tendance 1</h3>
+                                    <div>
+                                        <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                                        <div><a href="#">Première FR<i class="fas fa-check-circle"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fas fa-play-circle"></i>
+                                <div class="img"></div>
+                                <div class="text">
+                                    <h3>Vidéo tendance 2</h3>
+                                    <div>
+                                        <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                                        <div><a href="#">Première FR<i class="fas fa-check-circle"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fas fa-play-circle"></i>
+                                <div class="img"></div>
+                                <div class="text">
+                                    <h3>Vidéo tendance 3</h3>
+                                    <div>
+                                        <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                                        <div><a href="#">Première FR<i class="fas fa-check-circle"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fas fa-play-circle"></i>
+                                <div class="img"></div>
+                                <div class="text">
+                                    <h3>Vidéo tendance 4</h3>
+                                    <div>
+                                        <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                                        <div><a href="#">Première FR<i class="fas fa-check-circle"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fas fa-play-circle"></i>
+                                <div class="img"></div>
+                                <div class="text">
+                                    <h3>Vidéo tendance 5</h3>
+                                    <div>
+                                        <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                                        <div><a href="#">Première FR<i class="fas fa-check-circle"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fas fa-play-circle"></i>
+                                <div class="img"></div>
+                                <div class="text">
+                                    <h3>Vidéo tendance 6</h3>
+                                    <div>
+                                        <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                                        <div><a href="#">Première FR<i class="fas fa-check-circle"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+
+            </div>
+            <section class="machaine">
+                <div class="container">
+                    <div class="titrechaine">
+                        <img src="/dist/img/7gqLLM_q_400x400.jpeg" alt="">
+                        <h3>Chaine officielle</h3>
+                        <h2>La Première</h2>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-play-circle"></i>
+                        <div class="img"></div>
+                        <div class="text">
+                            <h3>Vidéo de la chaîne 5</h3>
+                            <div>
+                                <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                                <div><a href="#">Première FR<i class="fas fa-check-circle"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-play-circle"></i>
+                        <div class="img"></div>
+                        <div class="text">
+                            <h3>Vidéo de la chaîne 5</h3>
+                            <div>
+                                <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                                <div><a href="#">Première FR<i class="fas fa-check-circle"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-play-circle"></i>
+                        <div class="img"></div>
+                        <div class="text">
+                            <h3>Vidéo de la chaîne 5</h3>
+                            <div>
+                                <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                                <div><a href="#">Première FR<i class="fas fa-check-circle"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-play-circle"></i>
+                        <div class="img"></div>
+                        <div class="text">
+                            <h3>Vidéo de la chaîne 5</h3>
+                            <div>
+                                <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                                <div><a href="#">Première FR<i class="fas fa-check-circle"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-play-circle"></i>
+                        <div class="img"></div>
+                        <div class="text">
+                            <h3>Vidéo de la chaîne 5</h3>
+                            <div>
+                                <div><img src="/dist/img/7gqLLM_q_400x400.jpeg" alt=""></div>
+                                <div><a href="#">Première FR<i class="fas fa-check-circle"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chaineune">
+                <div class="item">
+                    <img src="/dist/img/7gqLLM_q_400x400.jpeg" alt="">
+                    <h3>Chaine officielle</h3>
+                    <h2>La Première</h2>
+                </div>
+                <div class="item">
+                    <img src="/dist/img/7gqLLM_q_400x400.jpeg" alt="">
+                    <h3>Chaine officielle</h3>
+                    <h2>La Première</h2>
+                </div>
+                <div class="item">
+                    <img src="/dist/img/7gqLLM_q_400x400.jpeg" alt="">
+                    <h3>Chaine officielle</h3>
+                    <h2>La Première</h2>
+                </div>
+                <div class="item">
+                    <img src="/dist/img/7gqLLM_q_400x400.jpeg" alt="">
+                    <h3>Chaine officielle</h3>
+                    <h2>La Première</h2>
+                </div>
+                <div class="item">
+                    <img src="/dist/img/7gqLLM_q_400x400.jpeg" alt="">
+                    <h3>Chaine officielle</h3>
+                    <h2>La Première</h2>
+                </div>
+                <div class="item">
+                    <img src="/dist/img/7gqLLM_q_400x400.jpeg" alt="">
+                    <h3>Chaine officielle</h3>
+                    <h2>La Première</h2>
+                </div>
+            </section>
+
+            <section class="info">
+                <div class="container">
+                    <div class="logo">
+                        <a href="/dist/index.html"><img src="img/Dailymotion_logo_(2015)_gray.svg"
+                                alt="logo dailymotion"></a>
+                    </div>
+                    <div class="menu">
+                        <ul class="nav1">
+                            <a href="#">
+                                <li>A propos</li>
+                            </a>
+                            <a href="#">
+                                <li>Quoi de neuf</li>
+                            </a>
+                            <a href="#">
+                                <li>Centre d'aide</li>
+                            </a>
+                            <a href="#">
+                                <li>FAQ</li>
+                            </a>
+                            <a href="#">
+                                <li>Emplois</li>
+                            </a>
+                            <a href="#">
+                                <li>API</li>
+                            </a>
+                            <a href="#">
+                                <li>Devenir Partenaire</li>
+                            </a>
+                            <a href="#">
+                                <li>Gérer les coockies</li>
+                            </a>
+                        </ul>
+
+                        <ul class="nav2">
+                            <a href="#">
+                                <li>Vie privée & <br> cookies</li>
+                            </a>
+                            <a href="#">
+                                <li>Conditions générales <br> d'utilistation</li>
+                            </a>
+                            <a href="#">
+                                <li>Filtre parental: <br> <span>activé</span></li>
+                            </a>
+                            <a href="#">
+                                <li>Toutes les <br> vidéos</li>
+                            </a>
+                            <a href="#">
+                                <li>Localiation: <br> <span class="pays">France</span></li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="content">
+            <div class="cr">© 2005 - 2019 Dailymotion - conçu avec ♥ à Paris, FR</div>
+            <div class="social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+
+    </footer>
+
+    <a href="#" class="up"><i class="fas fa-arrow-circle-up"></i></a>
+
+    <script src="https://kit.fontawesome.com/5b227c869a.js" crossorigin="anonymous"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
